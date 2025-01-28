@@ -1,5 +1,16 @@
 @import "../../variables.modules";
 
+.aboutMe {
+  min-height: 100vh; 
+  position: relative;
+  background: rgb(17, 231, 219);
+  background: linear-gradient(0deg, rgba(17, 231, 219, 1) 0%, rgba(253, 238, 45, 1) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+}
+
 .pink {
   color: $pink;
 }
@@ -18,9 +29,4 @@
     margin: 0;
     line-height: 1.75;
   }
-}
-
-.aboutMe {
-  background: rgb(17,231,219);
-  background: linear-gradient(0deg, rgba(17,231,219,1) 0%, rgba(253,238,45,1) 100%);
 }

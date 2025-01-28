@@ -60,7 +60,7 @@ export default function About({innerRef}) {
     }
 
     return (
-        <Box ref={innerRef} display={'flex'} flexDirection={'column'} alignItems={'center'} mt={'3rem'} id={'about'}>
+        <Box className={Style.aboutMe}ref={innerRef} display={'flex'} flexDirection={'column'} alignItems={'center'} mt={'3rem'} id={'about'} marginTop={'0'}>
             <Terminal text={aboutMeText()}/>
             <Terminal text={skillsText()}/>
             <Terminal text={industriesText()}/>
