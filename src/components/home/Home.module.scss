@@ -1,10 +1,15 @@
 @import "../../variables.modules";
 
+main {
+  background: rgb(17,231,219);
+  background: linear-gradient(0deg, rgba(17,231,219,1) 0%, rgba(253,238,45,1) 100%);
+}
+
 h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
   @media only screen and (min-width: 940px) {
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: left;
   }
 }
@@ -13,7 +18,7 @@ h2 {
   font-size: 1.25rem;
   text-align: center;
   @media only screen and (min-width: 940px) {
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: left;
   }
 }
@@ -46,4 +51,46 @@ a:hover {
   50% { transform: rotate(10.0deg) }
   60% { transform: rotate( 0.0deg) }
   100% { transform: rotate( 0.0deg) }
+}
+
+#me {
+  height: 45vh;
+  width: auto; 
+  margin: 20px;
+  border-radius: 30px;
+}
+
+.mainInfo {
+  gap: 5vw;
+}
+
+.resume {
+  background-color: #3e6d80;
+  display: inline-block;
+  padding: 0.5em 1em;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.resume a {
+  color: white;
+}
+
+.resume:hover {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  transform: scale(1.01);
+}
+
+@media (max-width: 900px) {
+  .social {
+    justify-content: center;
+  }
 }

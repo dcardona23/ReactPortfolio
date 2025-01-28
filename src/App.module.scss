@@ -4,11 +4,7 @@
 
 body {
     font-family: 'Roboto', Helvetica, sans-serif;
-    font-size: 1.5vh;
-    width: 100%;
-    height: 100%;
     color: $dark;
-    background-color: $white;
     box-sizing: border-box;
 }
 
@@ -28,10 +24,6 @@ a:hover,
 a:visited,
 a:active {
     text-decoration: none;
-}
-
-img {
-    max-width: 100%;
 }
 
 ul {

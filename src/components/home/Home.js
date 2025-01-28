@@ -1,6 +1,6 @@
 import React from 'react';
 import Style from './Home.module.scss';
-import me from '../../img/self.png';
+import me from '../../img/self.jpg';
 import classNames from 'classnames';
 import EmojiBullet from "./EmojiBullet";
 import SocialIcon from "./SocialIcon";
@@ -10,11 +10,10 @@ import {info} from "../../info/Info";
 export default function Home({innerRef}) {
 
    return (
-      <Box ref={innerRef} component={'main'} display={'flex'} flexDirection={{xs: 'column', md: 'row'}} alignItems={'center'}
+      <Box className={Style.mainInfo} ref={innerRef} component={'main'} display={'flex'} flexDirection={{xs: 'column', md: 'row'}} alignItems={'center'}
            justifyContent={'center'} minHeight={'calc(100vh - 175px)'} id={'home'}>
-         <Box className={classNames(Style.avatar, Style.shadowed)} alt={'image of developer'} style={{background: info.gradient}} component={'img'} src={me} width={{xs: '35vh', md: '40vh'}}
-              height={{xs: '35vh', md: '40vh'}}
-              borderRadius={'50%'} p={'0.75rem'} mb={{xs: '1rem', sm: 0}} mr={{xs: 0, md: '2rem'}}/>
+            <img id={Style.me} alt={'me'} src={me}></img>
+         <Box className={classNames(Style.avatar, Style.shadowed)} ></Box>
          <Box>
             <h1>Hi, I'm <span style={{background: info.gradient, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent'}}>{info.firstName}</span><span className={Style.hand}>🤚</span>
             </h1>
@@ -23,8 +22,11 @@ export default function Home({innerRef}) {
                {info.miniBio.map((bio, index) => (
                   <EmojiBullet key={index} emoji={bio.emoji} text={bio.text}/>
                ))}
+            <button className={Style.resume}>
+              <a href="/resume.pdf" download id="resume-link">Check Out My Resume</a>
+            </button>
             </Box>
-            <Box display={'flex'} gap={'1.5rem'} justifyContent={'center'} fontSize={{xs: '2rem', md: '2.5rem'}}>
+            <Box className={Style.social} display={'flex'} gap={'2rem'} fontSize={{xs: 'rem', md: '2.5rem'}}>
                {info.socials.map((social, index) => (
                   <SocialIcon key={index} link={social.link} icon={social.icon} label={social.label} />
                ))}
