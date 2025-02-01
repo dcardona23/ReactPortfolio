@@ -2,8 +2,7 @@ import self from "../img/self.png"
 import mock1 from "../img/mock1.png"
 import mock2 from "../img/mock2.png"
 import mock3 from "../img/mock3.png"
-// import mock4 from "../img/mock4.png"
-// import mock5 from "../img/mock5.png"
+import mock4 from "../img/mock4.png"
 
 /* Hi there! Thanks for checking out my portfolio template. Be sure to read the comments to get a better understanding of
 how to make this template work best for you! */
@@ -120,16 +119,15 @@ export const info = {
         },
         {
             title: "Festify",
-            // live: "https://paytonpierce.dev",
             source1: "https://github.com/dcardona23/festify_react",
             source2: "https://github.com/dcardona23/festify",
             image: mock3
         },
         {
-            title: "Project 4",
-            live: "https://paytonpierce.dev",
-            source1: "https://github.com/paytonjewell"
-            // image: mock4
+            title: "Little Shop",
+            source1: "https://github.com/dcardona23/little-shop-fe", 
+            source2: "https://github.com/dcardona23/Little_Shop",
+            image: mock4
         }
     ]
 }
