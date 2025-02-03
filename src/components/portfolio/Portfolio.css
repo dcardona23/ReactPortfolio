@@ -42,6 +42,7 @@ html, body {
   width: 100%;
   overflow: hidden; /* Prevent overflow */
   margin-bottom: 2rem; /* Increased space between cards */
+  border: 2px solid black;
 }
 
 .project-card:hover {
@@ -71,14 +72,15 @@ html, body {
   text-align: justify;
   padding: 1rem; /* Increased padding for better readability */
   border-radius: 12px;
-  background-color: #4A90E2;
-  color: white;
+  background-color: lightskyblue;
+  color: black;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.6;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   margin-bottom: 1rem; /* Increased bottom margin */
+  border: 2px solid black
 }
 
 .project-description:hover {
