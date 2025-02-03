@@ -1,6 +1,5 @@
 import React from 'react';
 import Style from './Navbar.module.scss';
-import Toggler from "./home/Toggler";
 import { HashLink as Link } from 'react-router-hash-link';
 import { Box } from "@mui/material";
 import { info } from "../info/Info";
