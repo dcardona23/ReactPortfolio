@@ -15,8 +15,8 @@ export default function Home({innerRef}) {
             <img id={Style.me} alt={'me'} src={me}></img>
          <Box className={classNames(Style.avatar, Style.shadowed)} ></Box>
          <Box>
-            <h1>Hi, I'm <span style={{background: info.gradient, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent'}}>{info.firstName}</span><span className={Style.hand}>🤚</span>
-            </h1>
+            <h2>Hi, I'm {info.firstName}<span className={Style.hand}>🤚</span>
+            </h2>
             <h2>I'm {info.position}.</h2>
             <Box component={'ul'} p={'0.8rem'}>
                {info.miniBio.map((bio, index) => (

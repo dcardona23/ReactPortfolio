@@ -1,8 +1,7 @@
 @import "../../variables.modules";
 
 main {
-  background: rgb(17,231,219);
-  background: linear-gradient(0deg, rgba(17,231,219,1) 0%, rgba(253,238,45,1) 100%);
+  background: linear-gradient(135deg, #00C9FF 0%, #FF3CAC 100%);
 }
 
 h1 {
@@ -15,10 +14,11 @@ h1 {
 }
 
 h2 {
-  font-size: 1.25rem;
+  font-size: 2.5rem;
   text-align: center;
+  color: white;
   @media only screen and (min-width: 940px) {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     text-align: left;
   }
 }
@@ -65,7 +65,7 @@ a:hover {
 }
 
 .resume {
-  background-color: #3e6d80;
+  background-color: #1a1f21;
   display: inline-block;
   padding: 0.5em 1em;
   font-size: 1rem;

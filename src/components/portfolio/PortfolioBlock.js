@@ -1,38 +1,40 @@
 import React from 'react';
 import IconLink from "./IconLink";
-import {Box} from "@mui/material";
-import './Portfolio.css'
+import './Portfolio.css';
 
 function PortfolioBlock(props) {
-  const { image, live, source1, source2, title } = props;
+  const { image, live, source1, source2, title, contributors, description, solo } = props;
   return (
     <div className="page">
-        <Box className="project-card">
-        <Box className="project-image" component="img" src={image} alt="mockup" />
-        <h1 className="movie-title" style={{ fontSize: "2.75rem" }}>{title}</h1>
-        <Box className="portfolio">
-          {live &&
-            <Box p={1} className="icon-link-box" style={{ fontSize: "1.25rem" }}>
+      <div className="project-card-container">
+      <section className="project-card">
+        <h1 className="project-title">{title}</h1>
+        <img className="project-image" component="img" src={image} alt="mockup" />
+        <p className="project-description">{description}</p>
+        {solo &&
+          <p className="project-contributors">{solo}</p>}
+        {contributors && 
+          <p className="project-contributors">Contributors: {contributors}</p>}
+          <div className="buttons">
+            {live && (
+            <button className="icon-link-box">
               <IconLink link={live} title="Deployed Site" icon="fa fa-safari" />
-            </Box>
-          }
-           <Box p={1} className="icon-link-box" style={{ fontSize: "1.25rem" }}>
+            </button>
+            )}
+            <button className="icon-link-box">
               <IconLink link={source1} title="FE Source Code" icon="fa fa-code" />
-           </Box>
-           {source2 ? (
-              <Box p={1} className="icon-link-box" style={{ fontSize: "1.25rem" }}>
-                 <IconLink link={source2} title="BE Source Code" icon="fa fa-code" />
-              </Box>
-           ) : (
-            <Box p={1} className="icon-link-box" style={{ visibility: "hidden" }}>
-                 <IconLink link="#" title="No BE Code" icon="fa fa-code" />
-              </Box>
-           )}
-        </Box>
-     </Box>
+            </button>
+            {source2 && (
+              <button className="icon-link-box">
+                <IconLink link={source2} title="BE Source Code" icon="fa fa-code" />
+              </button>
+            )
+          }
+          </div>
+      </section>
+      </div>
     </div>
   );
 }
-
 
 export default PortfolioBlock;

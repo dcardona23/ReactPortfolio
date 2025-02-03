@@ -108,26 +108,34 @@ export const info = {
             title: "Rancid Tomatillos",
             live: "https://cosmic-brioche-acca7e.netlify.app/", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
             source1: "https://github.com/dcardona23/rancid-tomatillos", // this should be a link to the **repository** of the project, where the code is hosted.
-            image: mock1
+            image: mock1, 
+            contributors: "Alora Riley",
+            description: "Rancid Tomatillos is a dynamic, feature-rich movie voting web application that allows users to explore movie details, cast votes for favorites, and view real-time updates on voting trends. My contributions included developing a responsive user interface with React and React Router to display movie posters, implementing functionality for dynamic voting updates, and building a reusable React movie poster component that optimized rendering efficiency while maintaining clean, modular code. I also implemented end-to-end testing with Cypress to validate critical features, including image rendering on page load, dynamic vote tallying, and user navigation reliability."
         },
         {
             title: "Mood Boost",
             live: "https://mood-boost-fe.onrender.com/",
             source1: "https://github.com/Mood-Boost/mood_boost_fe",
             source2: "https://github.com/Mood-Boost/mood_boost_be",
-            image: mock2
+            image: mock2,
+            contributors: "Karl Fallenius, Paul Knapp, Terra Manning, Michael O'Brien",
+            description: "Mood Boost is a React web application with a Rails API that delivers curated content to uplift users' moods. My contributions included designing a modal with conditional rendering for login and account creation, featuring robust client-side validations; integrating an external API to fetch and display inspirational quotes in a responsive, dynamic user interface; connecting the frontend to the Rails API to manage user profiles and track completed activities for personalized tracking; and implementing end-to-end testing with Cypress to ensure reliable quote fetching, dynamic content updates, and seamless user navigation."
         },
         {
             title: "Festify",
             source1: "https://github.com/dcardona23/festify_react",
             source2: "https://github.com/dcardona23/festify",
-            image: mock3
+            image: mock3,
+            solo: "Solo Project", 
+            description: "Festify is a music festival scheduling application designed to provide festival administrators with detailed information about festival schedules, shows, and attendees. In this solo project, I was given 16 hours to create a full-stack application with a React frontend and a Rails API backend. I designed a database to store festival schedule information and implemented RESTful API endpoints to fetch schedules and attendees, as well as remove shows from schedules. I also created a responsive, intuitive user interface and implemented robust testing on both the frontend and backend."
         },
         {
             title: "Little Shop",
             source1: "https://github.com/dcardona23/little-shop-fe", 
             source2: "https://github.com/dcardona23/Little_Shop",
-            image: mock4
+            image: mock4, 
+            contributors: "Michael O'Brien, Jeremiah Ross, Brian Willett",
+            description: "Little Shop is an e-commerce platform that allows users to manage merchants, items, and coupons. My contributions included implementing RESTful API endpoints to create and sort merchants, find merchants by invoice, and create, activate, and deactivate coupons. I also implemented robust backend validations to ensure that only one coupon could be applied to an invoice and limited merchants to a maximum of five activated coupons at a time."
         }
     ]
 }
