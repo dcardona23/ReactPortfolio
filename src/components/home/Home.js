@@ -22,9 +22,7 @@ export default function Home({innerRef}) {
                {info.miniBio.map((bio, index) => (
                   <EmojiBullet key={index} emoji={bio.emoji} text={bio.text}/>
                ))}
-            <button className={Style.resume}>
-              <a href="/resume.pdf" download id="resume-link">Check Out My Resume</a>
-            </button>
+              <a className={Style.resume} href="/resume.pdf" download id="resume-link">Check Out My Resume</a>
             </Box>
             <Box className={Style.social} display={'flex'} gap={'2rem'} fontSize={{xs: 'rem', md: '2.5rem'}}>
                {info.socials.map((social, index) => (

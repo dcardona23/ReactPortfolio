@@ -79,6 +79,17 @@ a:hover {
   margin-bottom: 1rem;
 }
 
+.resume:hover {
+    background: white;
+    color: black;
+    border-color: black;
+    transform: scale(1.1);
+  }
+
+  .resume a:hover {
+    color: black;
+  }
+
 .resume a {
   color: white;
 }

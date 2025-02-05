@@ -42,16 +42,15 @@ export default function About({innerRef}) {
 
     function skillsText() {
         return <>
-         <p><span style={{color: info.baseColor}}>skills/tools </span></p>
-            <p style={{color: info.baseColor}}> Languages/Frameworks</p>
+            <p style={{color: info.baseColor}}> languages/frameworks</p>
             <ul className={Style.skills}>
                 {info.skills.languagesFrameworks.map((proficiency, index) => <li key={index}>{proficiency}</li>)}
             </ul>
-            <p style={{color: info.baseColor}}> Testing</p>
+            <p style={{color: info.baseColor}}> testing</p>
             <ul className={Style.skills}>
                 {info.skills.testing.map((skill, index) => <li key={index}>{skill}</li>)}
             </ul>
-            <p style={{color: info.baseColor}}> Tools/Workflow</p>
+            <p style={{color: info.baseColor}}> tools/workflow</p>
             <ul className={Style.skills}>
                 {info.skills.toolsWorkflow.map((skill, index) => <li key={index}>{skill}</li>)}
             </ul>
@@ -61,7 +60,7 @@ export default function About({innerRef}) {
 
     function industriesText() {
       return <>
-        <p><span style={{color: info.baseColor}}>previous industries </span></p>
+        <p><span style={{color: info.baseColor}}>previous_industries </span></p>
           <ul>
               {info.previousIndustries.map((industry, index) => (
                   <li key={index}><Box component={'span'} mr={'1rem'}>{industry.emoji}</Box>{industry.label}</li>
