@@ -7,7 +7,7 @@ import mock4 from "../img/mock4.png"
 /* Hi there! Thanks for checking out my portfolio template. Be sure to read the comments to get a better understanding of
 how to make this template work best for you! */
 
-export let colors = ["rgb(0,255,164)", "rgb(166,104,255)"];
+export let colors = ["rgb(0,255,164)", "rgb(166,104,255), rgb(255,255,255)"];
 /*
 I highly recommend using a gradient generator like https://gradientgenerator.paytonpierce.dev/ to generate a pair of colors that you like.
 These colors will be used to style your name on the homepage, the background of your picture, and some other accents throughout
@@ -33,6 +33,7 @@ export const info = {
     selfPortrait: self, // don't change this unless you want to name your self-portrait in the "img" folder something else!
     gradient: `-webkit-linear-gradient(135deg, ${colors})`, // don't change this either
     baseColor: colors[0],
+    secondaryColor: colors[2],
     miniBio: [ // these are just some "tidbits" about yourself. You can look at mine https://paytonjewell.github.io/#/ for an example if you'd like
       {
         emoji: "⚖️",
@@ -60,13 +61,38 @@ export const info = {
             label: 'linkedin'
         }
     ],
-    bio1: "Hi, I'm Danielle! For over a decade, I worked as a lawyer, tackling complex problems, analyzing intricate details, and delivering results. I thrived under pressure, turning challenges into clear, actionable solutions.",
-    bio2: "Now, I’m bringing those skills into software development. Learning Ruby, JavaScript, and other languages has been a natural extension of my love for problem-solving, and I’m excited to apply my expertise in new ways. I’m driven by curiosity and always eager to learn. I look forward to combining my legal background with my growing technical skills to contribute to teams and build software that makes a real impact.",
+    bio1: "Hi👋 I’m Danielle! After over a decade as a public sector attorney, I’m transitioning into a new field—software development. Fueled by a passion for lifelong learning and a fascination with all things tech, I took a leap of faith - leaving my legal career behind to embark on an exciting new journey.",
+    bio2: "While, at first glance this path may not seem especially linear, to me, it's a natural extension of my legal career. I’m taking the parts I loved most about the law:",
+    bio3: <ul>
+      <li>
+      ✅ problem-solving,
+      </li>
+      <li>
+      ✅ logical reasoning,
+      </li>
+      <li>
+      ✅ organization
+      </li>
+    </ul>, 
+    bio4: "...and trading in the not so fun parts of being a lawyer:", 
+    bio5: <ul>
+      <li>
+      ☹️ arguing with opposing counsel, 
+      </li>
+      <li>
+      🥱 responding to discovery,
+      </li>
+      <li>
+      👩🏽‍💼 wearing suits 
+      </li>
+    </ul>, 
+    bio6: "...for the excitement of building something tangible.",
+    bio7: "Now, I couldn’t be more excited 🥳 to combine my legal expertise with my growing technical skills to collaborate with innovative teams and create impactful software solutions.",
     skills:
         {
             languagesFrameworks: ['ruby', 'rails', 'javascript', 'sql', 'html', 'css', 'active record', 'react'],
-            testing: ['rspec', 'tdd', 'cypress', 'webmock', 'vcr', 'simplecov'],
-            toolsWorkflow: ['git', 'github', 'postman', 'postico', 'heroku', 'render', 'agile', 'npm']
+            testing: ['rspec', 'tdd', 'webmock', 'vcr', 'cypress', 'faker', 'factorybot', 'simplecov'],
+            toolsWorkflow: ['git', 'github', 'postman', 'postico', 'heroku', 'render', 'netfliy', 'agile development']
         }
     ,
     hobbies: [

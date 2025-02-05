@@ -9,11 +9,33 @@ export default function About({innerRef}) {
 
     function aboutMeText() {
         return <>
-          <p><span style={{color: info.baseColor}}>about_me </span>
-            {info.bio1}
+          <p><span style={{color: info.baseColor}}>about_me %
+          </span>
+          {`  ${info.bio1}`}
             </p>
-            <p><span style={{color: info.baseColor}}></span>
+            <p><span style={{color: info.secondaryColor}}>
             {info.bio2}
+            </span>
+            </p>
+            <p><span>
+            {info.bio3}
+            </span>
+            </p>
+            <p><span style={{color: info.secondaryColor}}>
+            {info.bio4}
+            </span>
+            </p>
+            <p><span style={{color: info.baseColor}}>
+            {info.bio5}
+            </span>
+            </p>
+            <p><span style={{color: info.secondaryColor}}>
+            {info.bio6}
+            </span>
+            </p>
+            <p><span style={{color: info.secondaryColor}}>
+            {info.bio7}
+            </span>
             </p>
         </>;
     }
