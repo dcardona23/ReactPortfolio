@@ -119,7 +119,7 @@ export const info = {
             source2: "https://github.com/Mood-Boost/mood_boost_be",
             image: mock2,
             contributors: "Karl Fallenius, Paul Knapp, Terra Manning, Michael O'Brien",
-            description: "Mood Boost is a React web application with a Rails API that delivers curated content to uplift users' moods. My contributions included designing a modal with conditional rendering for login and account creation, featuring robust client-side validations; integrating an external API to fetch and display inspirational quotes in a responsive, dynamic user interface; connecting the frontend to the Rails API to manage user profiles and track completed activities for personalized tracking; and implementing end-to-end testing with Cypress to ensure reliable quote fetching, dynamic content updates, and seamless user navigation."
+            description: "Mood Boost is a React web application with a Rails API that delivers curated content to uplift users' moods. My contributions included designing a modal with conditional rendering for login and account creation, featuring robust client-side validations; integrating an external API to fetch and display inspirational quotes in a responsive, dynamic user interface; connecting the frontend to the Rails API to manage user profiles and log completed activities for personalized tracking; and implementing end-to-end testing with Cypress to ensure reliable quote fetching, dynamic content updates, and seamless user navigation."
         },
         {
             title: "Festify",
@@ -135,7 +135,7 @@ export const info = {
             source2: "https://github.com/dcardona23/Little_Shop",
             image: mock4, 
             contributors: "Michael O'Brien, Jeremiah Ross, Brian Willett",
-            description: "Little Shop is an e-commerce platform that allows users to manage merchants, items, and coupons. My contributions included implementing RESTful API endpoints to create and sort merchants, find merchants by invoice, and create, activate, and deactivate coupons. I also implemented robust backend validations to ensure that only one coupon could be applied to an invoice and limited merchants to a maximum of five activated coupons at a time."
+            description: "Little Shop is an e-commerce platform that allows users to manage merchants, items, and coupons. My contributions included implementing RESTful API endpoints to create and sort merchants, find merchants by invoice, and create, activate, and deactivate coupons. I also implemented robust backend validations to ensure that only one coupon could be applied to an invoice and to limit merchants to a maximum of five active coupons at a time."
         }
     ]
 }

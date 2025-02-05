@@ -72,8 +72,8 @@ html, body {
   text-align: justify;
   padding: 1rem; /* Increased padding for better readability */
   border-radius: 12px;
-  background-color: lightskyblue;
-  color: black;
+  background-color: skyblue;
+  color: #343434;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.6;

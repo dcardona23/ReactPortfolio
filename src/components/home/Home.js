@@ -18,7 +18,7 @@ export default function Home({innerRef}) {
             <h2>Hi, I'm {info.firstName}<span className={Style.hand}>🤚</span>
             </h2>
             <h2>I'm {info.position}.</h2>
-            <Box component={'ul'} p={'0.8rem'}>
+            <Box component={'ul'} p={'0.8rem'} color={"white"}>
                {info.miniBio.map((bio, index) => (
                   <EmojiBullet key={index} emoji={bio.emoji} text={bio.text}/>
                ))}
