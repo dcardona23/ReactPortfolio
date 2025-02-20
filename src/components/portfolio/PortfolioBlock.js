@@ -18,15 +18,15 @@ function PortfolioBlock(props) {
           <div className="buttons">
             {live && (
             <button className="icon-link-box">
-              <IconLink link={live} title="Deployed Site" icon="fa fa-safari" />
+              <IconLink link={live} title="Deployed Site" />
             </button>
             )}
             <button className="icon-link-box">
-              <IconLink link={source1} title="FE Source Code" icon="fa fa-code" />
+              <IconLink link={source1} title="FE Source Code" />
             </button>
             {source2 && (
               <button className="icon-link-box">
-                <IconLink link={source2} title="BE Source Code" icon="fa fa-code" />
+                <IconLink link={source2} title="BE Source Code" />
               </button>
             )
           }
