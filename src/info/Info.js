@@ -92,7 +92,7 @@ export const info = {
         {
             languagesFrameworks: ['ruby', 'rails', 'javascript', 'sql', 'html', 'css', 'active record', 'react'],
             testing: ['rspec', 'tdd', 'webmock', 'vcr', 'cypress', 'faker', 'factorybot', 'simplecov'],
-            toolsWorkflow: ['git', 'github', 'postman', 'postico', 'heroku', 'render', 'netfliy', 'agile development']
+            toolsWorkflow: ['git', 'github', 'postman', 'postico', 'heroku', 'render', 'netlify', 'agile development']
         }
     ,
     hobbies: [
