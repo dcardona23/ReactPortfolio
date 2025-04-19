@@ -1,90 +1,95 @@
 import { createTheme } from '@mui/material/styles';
 
 export const theme = createTheme({
-  palette: {
-    primary: {
-      main: '#000000',
-    },
-    text: {
-      primary: '#000000',
-      secondary: '#666666',
-    },
-    background: {
-      paper: '#ffffff',
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 600,
+      md: 900,
+      lg: 1200,
+      xl: 1536,
     },
   },
   typography: {
-    fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
+    fontFamily: '"Poppins", "Roboto", "Helvetica", "Arial", sans-serif',
     h1: {
-      fontSize: '2.5rem',
+      fontSize: '3.5rem',
       fontWeight: 600,
-      lineHeight: 1.2,
+      '@media (max-width:900px)': {
+        fontSize: '2.5rem',
+      },
+      '@media (max-width:600px)': {
+        fontSize: '2rem',
+      },
     },
     h2: {
-      fontSize: '2rem',
-      fontWeight: 600,
-      lineHeight: 1.3,
+      fontSize: '2.5rem',
+      fontWeight: 500,
+      '@media (max-width:900px)': {
+        fontSize: '2rem',
+      },
+      '@media (max-width:600px)': {
+        fontSize: '1.75rem',
+      },
     },
     h3: {
-      fontSize: '1.75rem',
-      fontWeight: 600,
-      lineHeight: 1.3,
+      fontSize: '2rem',
+      fontWeight: 500,
+      '@media (max-width:900px)': {
+        fontSize: '1.75rem',
+      },
+      '@media (max-width:600px)': {
+        fontSize: '1.5rem',
+      },
     },
     h4: {
       fontSize: '1.5rem',
       fontWeight: 500,
-      lineHeight: 1.4,
+      '@media (max-width:900px)': {
+        fontSize: '1.25rem',
+      },
+      '@media (max-width:600px)': {
+        fontSize: '1.1rem',
+      },
     },
     body1: {
       fontSize: '1rem',
-      lineHeight: 1.5,
+      '@media (max-width:600px)': {
+        fontSize: '0.9rem',
+      },
     },
     body2: {
       fontSize: '0.875rem',
-      lineHeight: 1.5,
+      '@media (max-width:600px)': {
+        fontSize: '0.8rem',
+      },
     },
   },
   components: {
     MuiButton: {
       styleOverrides: {
         root: {
-          borderRadius: '12px',
-          padding: '0.5rem 1.5rem',
-          fontSize: '1rem',
-          fontWeight: 500,
-          textTransform: 'none',
-          transition: 'all 0.3s ease-in-out',
-          '&:hover': {
-            transform: 'scale(1.05)',
-          },
-        },
-        contained: {
-          backgroundColor: '#1a1f21',
-          color: 'white',
-          '&:hover': {
-            backgroundColor: 'white',
-            color: 'black',
-          },
-        },
-        outlined: {
-          border: '2px solid black',
-          '&:hover': {
-            backgroundColor: 'black',
-            color: 'white',
-            borderColor: 'black',
+          '@media (max-width:600px)': {
+            padding: '0.4em 0.8em',
+            fontSize: '0.9rem',
           },
         },
       },
     },
-    MuiLink: {
-      styleOverrides: {
-        root: {
-          textDecoration: 'none',
-          '&:hover': {
-            textDecoration: 'underline',
-          },
-        },
-      },
+  },
+  palette: {
+    primary: {
+      main: '#1a1f21',
+    },
+    secondary: {
+      main: '#FF3CAC',
+    },
+    background: {
+      default: 'linear-gradient(135deg, #00C9FF 0%, #FF3CAC 100%)',
+      paper: 'rgba(255, 255, 255, 0.95)',
+    },
+    text: {
+      primary: '#343434',
     },
   },
 }); 

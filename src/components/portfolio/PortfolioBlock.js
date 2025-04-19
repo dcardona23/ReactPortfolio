@@ -13,9 +13,10 @@ const StyledCard = styled(Box)(({ theme }) => ({
   borderRadius: '15px',
   boxShadow: '0 8px 20px rgba(0, 0, 0, 0.15)',
   transition: 'transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out',
-  width: '600px',
+  width: { xs: '90%', sm: '500px', md: '600px' },
   height: '1050px',
-  margin: '0.5rem 1rem 1.5rem 1rem',
+  minHeight: '1050px',
+  margin: { xs: '0.5rem auto', md: '0.5rem auto 3rem auto' },
   overflow: 'hidden',
   border: '2px solid black',
   '&:hover': {
@@ -27,7 +28,7 @@ const StyledCard = styled(Box)(({ theme }) => ({
 const StyledTitle = styled(Typography)(({ theme }) => ({
   textAlign: 'center',
   width: '100%',
-  fontSize: '2.5rem',
+  fontSize: { xs: '2rem', md: '2.5rem' },
   color: '#333',
   marginTop: '1rem',
   marginBottom: '1rem',
@@ -35,6 +36,7 @@ const StyledTitle = styled(Typography)(({ theme }) => ({
 
 const StyledImage = styled('img')(({ theme }) => ({
   width: '90%',
+  maxWidth: '500px',
   height: 'auto',
   borderRadius: '10px',
   objectFit: 'cover',
@@ -47,16 +49,16 @@ const StyledDescription = styled(Typography)(({ theme }) => ({
   borderRadius: '12px',
   backgroundColor: 'skyblue',
   color: '#343434',
-  fontSize: '1rem',
+  fontSize: { xs: '0.9rem', md: '1rem' },
   fontWeight: 500,
   lineHeight: 1.6,
   boxShadow: '0 6px 15px rgba(0, 0, 0, 0.15)',
   transition: 'transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out',
   marginBottom: '0.5rem',
   border: '2px solid black',
-  height: '350px',
+  height: '400px',
   width: '100%',
-  overflow: 'hidden',
+  overflow: 'auto',
   '&:hover': {
     transform: 'scale(1.02)',
     boxShadow: '0 8px 20px rgba(0, 0, 0, 0.2)',
@@ -66,7 +68,7 @@ const StyledDescription = styled(Typography)(({ theme }) => ({
 const StyledContributors = styled(Typography)(({ theme }) => ({
   width: '100%',
   maxWidth: '600px',
-  fontSize: '1.2rem',
+  fontSize: { xs: '1rem', md: '1.2rem' },
   fontWeight: 'bold',
   marginBottom: '0.5rem',
 }));
@@ -75,8 +77,8 @@ const StyledButton = styled(Button)(({ theme }) => ({
   backgroundColor: '#1a1f21',
   color: 'white',
   display: 'inline-block',
-  padding: '0.5em 1em',
-  fontSize: '1rem',
+  padding: { xs: '0.4em 0.8em', md: '0.5em 1em' },
+  fontSize: { xs: '0.9rem', md: '1rem' },
   fontWeight: 600,
   textAlign: 'center',
   textDecoration: 'none',
@@ -95,12 +97,18 @@ const StyledButton = styled(Button)(({ theme }) => ({
 const StyledButtonsContainer = styled(Box)(({ theme }) => ({
   display: 'flex',
   flexDirection: 'row',
-  gap: '1rem',
+  gap: { xs: '0.5rem', md: '1rem' },
   alignItems: 'center',
   justifyContent: 'center',
   marginTop: '0.5rem',
   marginBottom: '0.25rem',
   flexWrap: 'nowrap',
+  width: '100%',
+  overflowX: 'auto',
+  padding: '0.5rem',
+  '&::-webkit-scrollbar': {
+    display: 'none',
+  },
 }));
 
 function PortfolioBlock(props) {
