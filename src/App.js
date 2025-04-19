@@ -1,17 +1,17 @@
 import React from 'react';
-import './App.module.scss';
-import BaseLayout from "./components/BaseLayout";
-import {BrowserRouter} from "react-router-dom";
+import { ThemeProvider } from '@mui/material/styles';
+import { theme } from './theme/theme';
+import BaseLayout from './components/BaseLayout';
+import { HashRouter } from 'react-router-dom';
 
 function App() {
-   return (
-      <div>
-         <BrowserRouter>
-            <BaseLayout/>
-         </BrowserRouter>
-      </div>
-   );
+  return (
+    <HashRouter>
+      <ThemeProvider theme={theme}>
+        <BaseLayout />
+      </ThemeProvider>
+    </HashRouter>
+  );
 }
-
 
 export default App;

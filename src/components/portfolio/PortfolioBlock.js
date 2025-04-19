@@ -1,39 +1,115 @@
 import React from 'react';
+import { Box, Typography, Button, styled } from "@mui/material";
 import IconLink from "./IconLink";
 import './Portfolio.css';
+
+const StyledCard = styled(Box)(({ theme }) => ({
+  textAlign: 'center',
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  padding: '2rem',
+  background: 'rgba(255, 255, 255, 0.95)',
+  borderRadius: '15px',
+  boxShadow: '0 8px 20px rgba(0, 0, 0, 0.15)',
+  transition: 'transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out',
+  width: '600px',
+  margin: '1rem 1rem 3rem 1rem',
+  overflow: 'hidden',
+  border: '2px solid black',
+  '&:hover': {
+    transform: 'translateY(-5px)',
+    boxShadow: '0 12px 25px rgba(0, 0, 0, 0.2)',
+  },
+}));
+
+const StyledTitle = styled(Typography)(({ theme }) => ({
+  textAlign: 'center',
+  width: '100%',
+  fontSize: '2.5rem',
+  color: '#333',
+  marginTop: '1rem',
+  marginBottom: '1rem',
+}));
+
+const StyledImage = styled('img')(({ theme }) => ({
+  width: '90%',
+  height: 'auto',
+  borderRadius: '10px',
+  objectFit: 'cover',
+  marginBottom: '1rem',
+}));
+
+const StyledDescription = styled(Typography)(({ theme }) => ({
+  textAlign: 'justify',
+  padding: '1rem',
+  borderRadius: '12px',
+  backgroundColor: 'skyblue',
+  color: '#343434',
+  fontSize: '1rem',
+  fontWeight: 500,
+  lineHeight: 1.6,
+  boxShadow: '0 6px 15px rgba(0, 0, 0, 0.15)',
+  transition: 'transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out',
+  marginBottom: '1rem',
+  border: '2px solid black',
+  flex: 1,
+  width: '100%',
+  '&:hover': {
+    transform: 'scale(1.02)',
+    boxShadow: '0 8px 20px rgba(0, 0, 0, 0.2)',
+  },
+}));
+
+const StyledContributors = styled(Typography)(({ theme }) => ({
+  width: '100%',
+  maxWidth: '600px',
+  fontSize: '1.2rem',
+  fontWeight: 'bold',
+  marginBottom: '1rem',
+}));
+
+const StyledButton = styled(Button)(({ theme }) => ({
+  width: '180px',
+  height: '60px',
+}));
+
+const StyledButtonsContainer = styled(Box)(({ theme }) => ({
+  display: 'flex',
+  flexDirection: 'row',
+  gap: '1.5rem',
+  alignItems: 'center',
+  justifyContent: 'center',
+  marginTop: 'auto',
+  paddingTop: '1rem',
+  flexWrap: 'wrap',
+}));
 
 function PortfolioBlock(props) {
   const { image, live, source1, source2, title, contributors, description, solo } = props;
   return (
-    <div className="page">
-      <div className="project-card-container">
-      <section className="project-card">
-        <h1 className="project-title">{title}</h1>
-        <img className="project-image" component="img" src={image} alt="mockup" />
-        <p className="project-description">{description}</p>
-        {solo &&
-          <p className="project-contributors">{solo}</p>}
-        {contributors && 
-          <p className="project-contributors">Contributors: {contributors}</p>}
-          <div className="buttons">
-            {live && (
-            <button className="icon-link-box">
-              <IconLink link={live} title="Deployed Site" />
-            </button>
-            )}
-            <button className="icon-link-box">
-              <IconLink link={source1} title="FE Source Code" />
-            </button>
-            {source2 && (
-              <button className="icon-link-box">
-                <IconLink link={source2} title="BE Source Code" />
-              </button>
-            )
-          }
-          </div>
-      </section>
-      </div>
-    </div>
+    <StyledCard>
+      <StyledTitle variant="h2">{title}</StyledTitle>
+      <StyledImage src={image} alt="mockup" />
+      <StyledDescription>{description}</StyledDescription>
+      {solo && <StyledContributors>{solo}</StyledContributors>}
+      {contributors && <StyledContributors>Contributors: {contributors}</StyledContributors>}
+      <StyledButtonsContainer>
+        {live && (
+          <StyledButton>
+            <IconLink link={live} title="Deployed Site" />
+          </StyledButton>
+        )}
+        <StyledButton>
+          <IconLink link={source1} title="FE Source Code" />
+        </StyledButton>
+        {source2 && (
+          <StyledButton>
+            <IconLink link={source2} title="BE Source Code" />
+          </StyledButton>
+        )}
+      </StyledButtonsContainer>
+    </StyledCard>
   );
 }
 
