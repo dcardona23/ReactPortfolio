@@ -5,8 +5,7 @@ import {
   Toolbar, 
   Typography, 
   Box, 
-  styled,
-  Button
+  styled
 } from "@mui/material";
 import { info } from "../info/Info";
 import { singlePage } from '../info/Info';
@@ -19,20 +18,10 @@ const StyledLink = styled(Link)(({ theme }) => ({
   },
 }));
 
-const StyledButton = styled(Button)(({ theme }) => ({
-  margin: '0 0.5rem',
-}));
-
 const StyledTypography = styled(Typography)(({ theme }) => ({
   color: 'black',
   fontWeight: 500,
   textTransform: 'lowercase',
-}));
-
-const StyledBox = styled(Box)(({ theme }) => ({
-  borderBottom: '5px solid',
-  borderImageSlice: 1,
-  borderImageSource: info.gradient,
 }));
 
 const links = [

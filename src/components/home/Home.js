@@ -1,7 +1,6 @@
 import React from 'react';
 import { Box, Typography, Button, styled } from "@mui/material";
 import me from '../../img/self.png';
-import EmojiBullet from "./EmojiBullet";
 import SocialIcon from "./SocialIcon";
 import { info } from "../../info/Info";
 

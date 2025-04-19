@@ -2,10 +2,10 @@ import React from 'react';
 import { styled } from '@mui/material';
 
 const StyledLink = styled('a')(({ theme }) => ({
-  color: 'black',
+  color: 'white',
   textDecoration: 'none',
   '&:hover': {
-    color: 'white',
+    color: 'black',
   },
 }));
 

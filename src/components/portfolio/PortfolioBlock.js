@@ -14,7 +14,8 @@ const StyledCard = styled(Box)(({ theme }) => ({
   boxShadow: '0 8px 20px rgba(0, 0, 0, 0.15)',
   transition: 'transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out',
   width: '600px',
-  margin: '1rem 1rem 3rem 1rem',
+  height: '1050px',
+  margin: '0.5rem 1rem 1.5rem 1rem',
   overflow: 'hidden',
   border: '2px solid black',
   '&:hover': {
@@ -51,10 +52,11 @@ const StyledDescription = styled(Typography)(({ theme }) => ({
   lineHeight: 1.6,
   boxShadow: '0 6px 15px rgba(0, 0, 0, 0.15)',
   transition: 'transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out',
-  marginBottom: '1rem',
+  marginBottom: '0.5rem',
   border: '2px solid black',
-  flex: 1,
+  height: '350px',
   width: '100%',
+  overflow: 'hidden',
   '&:hover': {
     transform: 'scale(1.02)',
     boxShadow: '0 8px 20px rgba(0, 0, 0, 0.2)',
@@ -66,23 +68,39 @@ const StyledContributors = styled(Typography)(({ theme }) => ({
   maxWidth: '600px',
   fontSize: '1.2rem',
   fontWeight: 'bold',
-  marginBottom: '1rem',
+  marginBottom: '0.5rem',
 }));
 
 const StyledButton = styled(Button)(({ theme }) => ({
-  width: '180px',
-  height: '60px',
+  backgroundColor: '#1a1f21',
+  color: 'white',
+  display: 'inline-block',
+  padding: '0.5em 1em',
+  fontSize: '1rem',
+  fontWeight: 600,
+  textAlign: 'center',
+  textDecoration: 'none',
+  border: 'none',
+  borderRadius: '1rem',
+  cursor: 'pointer',
+  margin: '0.5rem',
+  '&:hover': {
+    backgroundColor: 'white',
+    color: 'black',
+    transform: 'scale(1.01)',
+    boxShadow: '0 6px 8px rgba(0, 0, 0, 0.15)',
+  },
 }));
 
 const StyledButtonsContainer = styled(Box)(({ theme }) => ({
   display: 'flex',
   flexDirection: 'row',
-  gap: '1.5rem',
+  gap: '1rem',
   alignItems: 'center',
   justifyContent: 'center',
-  marginTop: 'auto',
-  paddingTop: '1rem',
-  flexWrap: 'wrap',
+  marginTop: '0.5rem',
+  marginBottom: '0.25rem',
+  flexWrap: 'nowrap',
 }));
 
 function PortfolioBlock(props) {
