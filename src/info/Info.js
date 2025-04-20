@@ -43,11 +43,6 @@ export const info = {
           emoji: '☃️',
           text: 'based in Colorado'
       },
-      
-      {
-          emoji: "📧",
-          text: "danielle.cardona23@gmail.com"
-      }, 
     ],
     socials: [
         {
@@ -92,7 +87,7 @@ export const info = {
         {
             languagesFrameworks: ['ruby', 'rails', 'javascript', 'sql', 'html', 'css', 'active record', 'react'],
             testing: ['rspec', 'tdd', 'webmock', 'vcr', 'cypress', 'faker', 'factorybot', 'simplecov'],
-            toolsWorkflow: ['git', 'github', 'postman', 'postico', 'heroku', 'render', 'netlify', 'agile development']
+            toolsWorkflow: ['git', 'github', 'aws', 'ai', 'postman', 'postico', 'heroku', 'render', 'netlify', 'agile development']
         }
     ,
     hobbies: [
